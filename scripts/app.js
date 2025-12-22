@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const filters = [
       { id: "seriesFilter", column: "series" },
       { id: "gameFilter", column: "game" },
-      { id: "categoryFilter", column: "category" },
+      { id: "categoryFilter", column: "categoryFilter" },
     ];
 
     filters.forEach(({id, column}) => createDropdownOptions(db, id, column, 1));
