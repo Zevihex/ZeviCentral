@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Achievements</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxanium" rel="stylesheet">
+  <link rel="icon" href="../images/ZevihexMain (Big).png" type="image/png">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="./news.html">News</a>
+      <a href="./media.html">Media</a>
+      <a href="./speedruns.html">Speedruns</a>
+      <a href="./achievements.html">Achievements</a>
+      <a href="#" class="active">Tierlist</a>
+    </nav>
+  </header>
+  <div id="filter-container">
+    <div class="filter-group">
+      <label for="replayabilityFilter">Replayability</label>
+      <select id="replayabilityFilter">
+        <option value="default">Default</option>
+        <option value="desc">Highest to Lowest</option>
+        <option value="asc">Lowest To Highest</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="speedrunningnessFilter">Speedrunningness</label>
+      <select id="speedrunningnessFilter">
+        <option value="default">Default</option>
+        <option value="desc">Highest to Lowest</option>
+        <option value="asc">Lowest To Highest</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="mechanicsFilter">Mechanics</label>
+      <select id="mechanicsFilter">
+        <option value="default">Default</option>
+        <option value="desc">Highest to Lowest</option>
+        <option value="asc">Lowest To Highest</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="designFilter">Design</label>
+      <select id="designFilter">
+        <option value="default">Default</option>
+        <option value="desc">Highest to Lowest</option>
+        <option value="asc">Lowest To Highest</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="musicFilter">Music</label>
+      <select id="musicFilter">
+        <option value="default">Default</option>
+        <option value="desc">Highest to Lowest</option>
+        <option value="asc">Lowest To Highest</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="ratingFilter">Rating</label>
+      <select id="ratingFilter">
+        <option value="default">Default</option>
+        <option value="desc">Highest to Lowest</option>
+        <option value="asc">Lowest To Highest</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label>&nbsp;</label>
+      <button type="button" id="resetTierlistFilters">Reset</button>
+    </div>
+  </div>
+  <div id="spinner-container">
+    <div id="spinner" class="spinner"></div>
+  </div>
+  <div id="tierlist-output"></div>
+  <script src="../scripts/tierlist.js" type="module"></script>
+  <script src="../sql-wasm/sql-wasm.js"></script>
+</body>
+</html>

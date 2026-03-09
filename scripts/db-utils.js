@@ -16,7 +16,6 @@ export function createDropdownOptions(db, id, column, num) {
   } else if(num == 2) {
     result = db.exec(`SELECT DISTINCT ${column} FROM achievements`);
   }
-  console.log(result);
   const values = result[0].values.map(row => row[0]);
   values.sort((a, b) => a.localeCompare(b));
   const select = document.getElementById(id);

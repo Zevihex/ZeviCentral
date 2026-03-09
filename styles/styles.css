@@ -141,7 +141,7 @@ table tbody tr:nth-child(odd) {
   text-align: center;
 }
 
-#resetFilters, #resetAchievementFilters {
+#resetFilters, #resetAchievementFilters, #resetTierlistFilters {
   background-color: rgb(30, 60, 120);
   border-radius: 4px;
   color: white;
